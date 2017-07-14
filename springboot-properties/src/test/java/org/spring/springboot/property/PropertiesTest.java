@@ -24,6 +24,9 @@ public class PropertiesTest {
     private UserProperties userProperties;
 
     @Autowired
+    private HomePropertiesYml homePropertiesYml;
+
+    @Autowired
     private HomeProperties homeProperties;
 
     @Test
@@ -34,6 +37,11 @@ public class PropertiesTest {
     @Test
     public void randomTestUser() {
         LOGGER.info("\n\n" + userProperties.toString() + "\n");
+    }
+
+    @Test
+    public void getHomePropertiesYml() {
+        LOGGER.info("\n\n" + homePropertiesYml.toString() + "\n");
     }
 
 }

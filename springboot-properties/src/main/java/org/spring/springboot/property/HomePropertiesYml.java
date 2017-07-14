@@ -8,8 +8,8 @@ import org.springframework.stereotype.Component;
  *
  * Created by bysocket on 17/04/2017.
  */
-//@Component
-public class HomeProperties1 {
+@Component
+public class HomePropertiesYml {
 
     /**
      * 省份

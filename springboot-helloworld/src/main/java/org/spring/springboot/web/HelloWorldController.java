@@ -1,6 +1,9 @@
 package org.spring.springboot.web;
 
+import org.springframework.http.HttpMethod;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -15,4 +18,11 @@ public class HelloWorldController {
     public String sayHello() {
         return "Hello,World!";
     }
+
+    @RequestMapping(value = "/testEntity", method = RequestMethod.POST)
+    public String testEntity(@RequestBody String s){
+        System.out.println(s);
+        return "成功";
+    }
+
 }

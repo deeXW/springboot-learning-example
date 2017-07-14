@@ -56,4 +56,20 @@
             <version>4.12</version>
         </dependency>
     </dependencies>
+
+    <build>
+        <defaultGoal>compile</defaultGoal>
+        <finalName>simulator-restful</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <jvmArguments>-Dfile.encoding=UTF-8</jvmArguments>
+                    <fork>true</fork><!-- 如果没有该项配置，可能devtools不会起作用 -->
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
 </project>

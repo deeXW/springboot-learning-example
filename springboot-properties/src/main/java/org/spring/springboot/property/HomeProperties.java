@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
  * Created by bysocket on 17/04/2017.
  */
 @Component
-@ConfigurationProperties(prefix = "home")
+@ConfigurationProperties(prefix = "home1")
 public class HomeProperties {
 
     /**
